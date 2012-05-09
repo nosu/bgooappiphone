@@ -1,0 +1,1 @@
+/Users/inoue/Dropbox/Repos/mac/BgooAppi/Resources/ui/tablet/ApplicationWindow.js
