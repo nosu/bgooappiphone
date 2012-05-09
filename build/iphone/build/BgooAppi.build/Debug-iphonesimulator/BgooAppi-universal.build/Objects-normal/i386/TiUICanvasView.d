@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/inoue/Dropbox/Repos/mac/BgooAppi/build/iphone/Classes/TiUICanvasView.m
+  /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/TiUICanvasView.m

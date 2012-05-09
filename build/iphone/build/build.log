@@ -5,7 +5,7 @@ reporting an issue to help us understand your environment, build settings
 and aid in debugging. Please attach this log to any issue that you report.
 ================================================================================
 
-Starting build at 05/09/12 19:11
+Starting build at 05/09/12 21:24
 
 Build details:
 
@@ -18,8 +18,8 @@ Build details:
 Script arguments:
    /Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/iphone/builder.py
    simulator
-   4.3
-   /Users/inoue/Dropbox/Repos/mac/BgooAppi
+   5.0
+   /Users/inoue/Dropbox/Repos/mac/bgooappiphone
    jp.co.nttr.bgooappi
    BgooAppi
    universal
@@ -33,7 +33,7 @@ Xcode path is: /Developer
 
 
 githash=999c68a, existing_git_hash=999c68a
-writing contents of /Users/inoue/Dropbox/Repos/mac/BgooAppi/build/iphone/project.xcconfig:
+writing contents of /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/project.xcconfig:
 
 TI_VERSION=2.0.1.GA2
 TI_SDK_DIR=/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION)/iphone

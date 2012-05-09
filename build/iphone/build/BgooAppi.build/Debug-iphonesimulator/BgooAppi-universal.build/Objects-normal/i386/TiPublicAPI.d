@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/inoue/Dropbox/Repos/mac/BgooAppi/build/iphone/Classes/TiPublicAPI.m \
-  /Users/inoue/Dropbox/Repos/mac/BgooAppi/build/iphone/Classes/TiPublicAPI.h
+  /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/TiPublicAPI.m \
+  /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/TiPublicAPI.h

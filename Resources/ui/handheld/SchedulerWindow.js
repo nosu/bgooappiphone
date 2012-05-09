@@ -6,11 +6,11 @@ Ti.include("CalendarView.js");
 		var win = Titanium.UI.createWindow($$.schedulerWindow);
 		var headerView = bz.ui.createHeaderView();
 		var calendarView = bz.ui.createCalendarView();
-		var eventListView = bz.ui.createEventListView();
+		//var eventListView = bz.ui.createEventListView();
 		
 		win.add(headerView);
 		win.add(calendarView);
-		win.add(eventListView);
+		//win.add(eventListView);
 		return win;
 	};
 })();

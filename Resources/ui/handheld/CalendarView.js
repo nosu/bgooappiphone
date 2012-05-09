@@ -1,21 +1,12 @@
 (function() {
-	bz.ui.createCalendarView = function() {
+	bz.ui.createCalendarView = function(year, month, day) {
 		var view = Titanium.UI.createView($$.calendarView);
 		
 		bz.ui.createCalendar = function(year, month, day) {
-			var platformWidth = Ti.Platform.displayCaps.platformWidth;
-			var platformHeight = Ti.Platform.displayCaps.platformHeight;	
-			var buttonWidth = Math.floor(platformWidth/7);
-			
-			var gridWidth = Math.floor(platformWidth/24);
-			var gridHeight = Math.floor(platformHeight/36);
-			
-			var buttonHeight = Math.floor(gridHeight*2.5);
-	
 			//月の日数を求める
 			var leapYear = false;
-			if ((year%4 == 0 && year%100 != 0) || (year%400 == 0)) leap_year=true;
-			var monthNumOfDay = [31,28+leap_year,31,30,31,30,31,31,30,31,30,31];
+			if ((year%4 == 0 && year%100 != 0) || (year%400 == 0)) leapYear=true;
+			var monthNumOfDay = [31,28+leapYear,31,30,31,30,31,31,30,31,30,31];
 			var thisMonthNumOfDay = monthNumOfDay[month-1];
 	
 			//前月および翌月の日数を求める
@@ -197,11 +188,11 @@
 
 		//今日の日付でカレンダー生成
 		(function(){
-			dd = new Date();
-			bz.ui.currentYear = dd.getFullYear();
-			bz.ui.currentMonth = dd.getMonth() + 1;
-			bz.ui.currentDay = dd.getDay();
-			bz.ui.createCalendar(bz.ui.currentYear, bz.ui.currentMonth, bz.ui.currentDay);
+			//dd = new Date();
+			//bz.ui.currentYear = dd.getFullYear();
+			//bz.ui.currentMonth = dd.getMonth() + 1;
+			//bz.ui.currentDay = dd.getDay();
+			bz.ui.createCalendar(bz.ui.currentDay, bz.ui.currentDay, bz.ui.currentDay);
 		})();
 
 		return view;

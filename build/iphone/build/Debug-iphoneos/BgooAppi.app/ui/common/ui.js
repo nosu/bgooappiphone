@@ -1,1 +1,1 @@
-/Users/inoue/Dropbox/Repos/mac/BgooAppi/Resources/ui/common/ui.js
+/Users/inoue/Dropbox/Repos/mac/bgooappiphone/Resources/ui/common/ui.js

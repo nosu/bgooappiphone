@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/inoue/Dropbox/Repos/mac/BgooAppi/build/iphone/Classes/UIImage+Alpha.m \
-  /Users/inoue/Dropbox/Repos/mac/BgooAppi/build/iphone/Classes/UIImage+Alpha.h
+  /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/UIImage+Alpha.m \
+  /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/UIImage+Alpha.h

@@ -1,1 +1,0 @@
-/Users/inoue/Dropbox/Repos/mac/BgooAppi/Resources/ui/common/FirstView.js

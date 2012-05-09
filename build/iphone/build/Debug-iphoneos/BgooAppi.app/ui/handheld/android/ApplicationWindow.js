@@ -1,1 +1,1 @@
-/Users/inoue/Dropbox/Repos/mac/BgooAppi/Resources/ui/handheld/android/ApplicationWindow.js
+/Users/inoue/Dropbox/Repos/mac/bgooappiphone/Resources/ui/handheld/android/ApplicationWindow.js

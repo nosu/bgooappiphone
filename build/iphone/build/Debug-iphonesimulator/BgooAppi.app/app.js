@@ -1,1 +1,1 @@
-/Users/inoue/Dropbox/Repos/mac/BgooAppi/Resources/app.js
+/Users/inoue/Dropbox/Repos/mac/bgooappiphone/Resources/app.js

@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/inoue/Dropbox/Repos/mac/BgooAppi/build/iphone/Classes/AFOpenFlow/UIImageExtras.m \
-  /Users/inoue/Dropbox/Repos/mac/BgooAppi/build/iphone/Classes/AFOpenFlow/UIImageExtras.h
+  /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/AFOpenFlow/UIImageExtras.m \
+  /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/AFOpenFlow/UIImageExtras.h

@@ -1,1 +1,2 @@
-dependencies: /Users/inoue/Dropbox/Repos/mac/BgooAppi/build/iphone/main.m
+dependencies: \
+  /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/main.m

@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/inoue/Dropbox/Repos/mac/BgooAppi/build/iphone/Classes/GDataXMLNode.m \
-  /Users/inoue/Dropbox/Repos/mac/BgooAppi/build/iphone/Classes/GDataXMLNode.h \
+  /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/GDataXMLNode.m \
+  /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/GDataXMLNode.h \
   /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/usr/include/libxml2/libxml/tree.h \
   /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/usr/include/libxml2/libxml/xmlversion.h \
   /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/usr/include/libxml2/libxml/xmlexports.h \

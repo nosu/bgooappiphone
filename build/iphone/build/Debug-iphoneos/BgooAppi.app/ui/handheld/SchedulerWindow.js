@@ -1,1 +1,1 @@
-/Users/inoue/Dropbox/Repos/mac/BgooAppi/Resources/ui/handheld/SchedulerWindow.js
+/Users/inoue/Dropbox/Repos/mac/bgooappiphone/Resources/ui/handheld/SchedulerWindow.js
