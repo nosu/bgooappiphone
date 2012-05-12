@@ -9,6 +9,7 @@
 	bz.ui.properties.width = Ti.Platform.displayCaps.platformWidth;
 	//iphoneの場合、960x640または480x320
 	
+	Ti.include("lib/init.js");
 	Ti.include("ui/common/ui.js");
 	Ti.include("ui/common/styles.js");
 	Ti.include("lib/mixin.js");

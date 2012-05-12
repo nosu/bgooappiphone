@@ -45,7 +45,7 @@
 		    	}));
 		    	bz.ui.weekDayNameLabels[i] = Ti.UI.createLabel(bz.combine($$.weekDayNameLabel,{
 		    		text:$$.weekDayName[i],
-		    		backgroundColor:$$weekDayNameLabelColor[i]
+		    		backgroundColor:$$.weekDayNameLabelColor[i]
 		    	}));
 		    	bz.ui.weekDayNameViews[i].add(bz.ui.weekDayNameLabels[i]);
 		    	view.add(bz.ui.weekDayNameViews[i]);
@@ -75,7 +75,7 @@
 		    	var top = 20 + $$.cellBorderWidth;
 				var left = 0.4 + $$.cellBorderWidth + $$.cellWidth * cols;
 			    bz.ui.dayCellViews[i] = Ti.UI.createView(bz.combine($$.dayCellView,{
-		        	backgroundColor: '#7a7a7a',
+		        	backgroundColor: $$.dayLabelColor[7],
 		            top:top.toFixed(1), left:left.toFixed(1)
 	        	}));
 		        bz.ui.dayNumLabels[i] = Ti.UI.createLabel(bz.combine($$.dayCellLabel, {
@@ -99,7 +99,7 @@
 		    	var top = 20 + $$.cellBorderWidth + 40 * rows;
 				var left = 0.4 + $$.cellBorderWidth + $$.cellWidth * cols;
 		        bz.ui.dayCellViews[i+prevMonthShowDay] = Ti.UI.createView(bz.combine($$.dayCellView, {
-		            backgroundColor:bz.ui.dayLabelColor[cols],
+		            backgroundColor:$$.dayLabelColor[cols],
 		            top:top.toFixed(1), left:left.toFixed(1),
 		            dayNum: i+prevMonthShowDay //イベント用に日付プロパティを一応用意
 		        }));
@@ -111,7 +111,7 @@
 		        if(bz.ui.currentDay == i) {
 		        	bz.ui.dayNumLabels[i+prevMonthShowDay].backgroundColor = "red";
 		        	bz.ui.currentCell = i + prevMonthShowDay;
-		        	bz.ui.currentCellColor = bz.ui.dayLabelColor[cols];
+		        	bz.ui.currentCellColor = $$.dayLabelColor[cols];
 		        };
 		        bz.ui.dayCellViews[i+prevMonthShowDay].add(bz.ui.dayNumLabels[i+prevMonthShowDay]);
 		        
@@ -124,7 +124,7 @@
 		        	//新しいCellを選択
 		        	bz.ui.currentCellColor = bz.ui.dayCellViews[i+prevMonthShowDay].backgroundColor; //通常時の色を保存
 		        	bz.ui.currentCell = i+prevMonthShowDay;
-		        	bz.ui.dayCellViews[i+prevMonthShowDay].backgroundColor = "yellow";
+		        	bz.ui.dayCellViews[i+prevMonthShowDay].backgroundColor = "#b58900";
 		        	//bz.ui.dayCellViews[i+prevMonthShowDay].borderColor = "black";
 		        	
 		        	//イベントViewを更新
@@ -135,7 +135,7 @@
     			//dammy予定読み込み
     			bz.ui.eventLabels[i+prevMonthShowDay] = new Array(2);
     			bz.ui.eventLabels[i+prevMonthShowDay][0] = Ti.UI.createLabel({
-    				text:bz.ui.dayCellViews[i+prevMonthShowDay].width,//"ぷらら"+String(i+prevMonthShowDay), color:"#000",
+    				text:"ぷらら"+String(i+prevMonthShowDay), color:$$.dayLabelColor[8],
 		            font:{fontSize:8},
 		            top:0, left:0
     			});
@@ -156,7 +156,7 @@
 		    	var top = 20 + $$.cellBorderWidth + 40 * rows;
 				var left = 0.4 + $$.cellBorderWidth + $$.cellWidth * cols;
 		        bz.ui.dayCellViews[i+prevMonthShowDay+thisMonthNumOfDay] = Ti.UI.createView(bz.combine($$.dayCellView, {
-		            backgroundColor:"#7a7a7a",
+		            backgroundColor: $$.dayLabelColor[7],
 		            top:top.toFixed(1), left:left.toFixed(1),
 		        }));
 		        bz.ui.dayNumLabels[i+prevMonthShowDay+thisMonthNumOfDay] = Ti.UI.createLabel(bz.combine($$.dayCellLabel, {
