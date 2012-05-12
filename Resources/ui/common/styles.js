@@ -1,19 +1,9 @@
 (function() {
 	
-	bz.ui.cal = {
-		weekDayName: ['日','月','火','水','木','金','土'],
-		weekDayNameLabelColor: ['#ff5744','#7a7a7a','#7a7a7a','#7a7a7a','#7a7a7a','#7a7a7a','#4343d9'],
-		dayLabelColor: ["#ffe4e1","#dcdcdc","#dcdcdc","#dcdcdc","#dcdcdc","#dcdcdc","#e6e6fa"]
-	};
-	
 	
 	//テーマ色定義
 	bz.ui.theme = {
 		textColor:'#000000',
-		grayTextColor:'#888888',
-		headerColor:'#333333',
-		lightBlue:'#006cb1',
-		darkBlue:'#93caed',
 		fontFamily: 'Droid Sans'
 	};
 	
@@ -33,12 +23,13 @@
 			height:'auto'
 		},
 		
-		//CalendarView用
+		//SchedulerWindow用
 		cellWidth: 45.6,
 		cellBorderWidth:0.3,
+		
 		schedulerWindow: {
 			layout:"vertical",
-			backgroundColor:"#fff",
+			backgroundColor: "#fdf6e3",
 			width:320
 		},
 		headerView: {
@@ -59,6 +50,10 @@
 			textAlign:'center', color:"#fff", font:{fontSize:12},
 			top:0, left:0
 		},
+		weekDayName: ['日','月','火','水','木','金','土'],
+		weekDayNameLabelColor: ['#ff5744','#7a7a7a','#7a7a7a','#7a7a7a','#7a7a7a','#7a7a7a','#4343d9'],
+		dayLabelColor: ["#ffe4e1","#eee8d5","#eee8d5","#eee8d5","#eee8d5","#eee8d5","#e6e6fa"],
+		
 		dayCellView: {
 			height:39, width:44.6,
 			borderWidth:0.5, borderColor:"#fff",

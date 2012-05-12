@@ -1,6 +1,6 @@
 (function() {
 	bz = {};
-		
+
 	var empty = {};
 	function mixin(/*Object*/ target, /*Object*/ source){
 		var name, s, i;
@@ -31,14 +31,13 @@
 	};
 
 	bz.ui = {};
-	bz.ui.properties = {};	
-	//determine platform and form factor and render approproate components
+	bz.ui.properties = {};
+
 	bz.ui.properties.osname = Ti.Platform.osname,
 	bz.ui.properties.version = Ti.Platform.version,
 	bz.ui.properties.height = Ti.Platform.displayCaps.platformHeight,
 	bz.ui.properties.width = Ti.Platform.displayCaps.platformWidth;
 	//iphoneの場合、960x640または480x320
-
 	
 	Ti.include("ui/common/ui.js");
 	Ti.include("ui/common/styles.js");
@@ -59,8 +58,8 @@
 		}
 		else {
 			//iPhone
-			bz.tabGroup = bz.ui.createApplicationTabGroup();
-			bz.tabGroup.open();
+			bz.ui.tabGroup = bz.ui.createApplicationTabGroup();
+			bz.ui.tabGroup.open();
 		}
 	}
 })();

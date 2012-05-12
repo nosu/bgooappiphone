@@ -13,7 +13,7 @@ Ti.include("../handheld/SchedulerWindow.js");
 			bz.ui.cal.currentUser = "井上渉";
 		})();
 		
-		var win = bz.ui.createSchedulerWindow();
+		var win = bz.ui.createSchedulerWindow($$.schedulerWindow);
 		bz.ui.schedulerTab = Ti.UI.createTab({
 			title:"スケジューラ",
 			window:win
