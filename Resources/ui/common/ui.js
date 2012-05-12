@@ -18,7 +18,14 @@ Ti.include("../handheld/SchedulerWindow.js");
 			title:"スケジューラ",
 			window:win
 		});
+<<<<<<< HEAD
 		bz.ui.tabGroup.addTab(bz.ui.schedulerTab);
 		return bz.ui.tabGroup;
+=======
+		win1.hideTabBar();
+		win1.hideNavBar();
+		tabGroup.addTab(tab1);
+		return tabGroup;
+>>>>>>> test
 	};
 })();
