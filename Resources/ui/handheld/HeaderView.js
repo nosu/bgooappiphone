@@ -29,8 +29,8 @@
 			view.add(selectPrevMonth);
 			selectPrevMonth.addEventListener("click", function(){
 				bz.ui.currentMonth--;
-				var win1 = bz.ui.createSchedulerWindow();
-				Ti.UI.currentTab.open(win1);
+				var win = bz.ui.createSchedulerWindow();
+				bz.ui.schedulerTab.open(win);
 			});
 		})();
 		
