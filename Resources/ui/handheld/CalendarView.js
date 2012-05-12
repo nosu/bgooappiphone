@@ -1,5 +1,5 @@
 (function() {
-	bz.ui.createCalendarView = function(year, month, day) {
+	bz.ui.createCalendarView = function() {
 		var view = Titanium.UI.createView($$.calendarView);
 		
 		bz.ui.createCalendar = function(year, month, day) {
@@ -9,7 +9,8 @@
 			var monthNumOfDay = [31,28+leapYear,31,30,31,30,31,31,30,31,30,31];
 			var thisMonthNumOfDay = monthNumOfDay[month-1];
 	
-			//前月および翌月の日数を求める
+			//表示する必要のある前月および翌月の日数を求める
+			//前月と翌月の月番号を求める
 			if(month==1) {
 				var prevMonthNumOfDay = monthNumOfDay[11];
 			} else {
@@ -21,7 +22,7 @@
 				var nextMonthNumOfDay = monthNumOfDay[month];
 			};
 
-			//1日の曜日を求める
+			//当月1日の曜日を求める
 			if (month==1 || month==2) {
 				zMonth = month + 12;
 				zYear = year -1;
@@ -30,15 +31,14 @@
 				zYear = year;
 			};
 			var firstDayOfMonth = (zYear+Math.floor(zYear/4)-Math.floor(zYear/100)+Math.floor(zYear/400)+Math.floor((13*zMonth+8)/5)+1)%7; //Math.floor((year*365.2425+days)%7);
-			 
-			 //曜日など用配列
+			
+			//曜日など用配列
 			var weekDayName = ['日','月','火','水','木','金','土'];
 			var weekDayNameLabelColor = ['#ff5744','#7a7a7a','#7a7a7a','#7a7a7a','#7a7a7a','#7a7a7a','#4343d9'];
 			var dayButtonColor = ["#ffe4e1","#dcdcdc","#dcdcdc","#dcdcdc","#dcdcdc","#dcdcdc","#e6e6fa"];
 
 			//カレンダーを生成する
-			//曜日ラベルを生成する
-			//各曜日表示セルView配列生成
+			//曜日名用のViewとLabelを生成する
    			bz.ui.cal.weekDayNameViews = new Array(7);
    			bz.ui.cal.weekDayNameLabels = new Array(7);
 			for(var i=0;i<7;i++){
@@ -184,7 +184,7 @@
 			var todayCell = day;
 			
 		
-		};  //createCalendar End
+		};  //createCalendar終わり
 
 		//今日の日付でカレンダー生成
 		(function(){
@@ -192,7 +192,7 @@
 			//bz.ui.currentYear = dd.getFullYear();
 			//bz.ui.currentMonth = dd.getMonth() + 1;
 			//bz.ui.currentDay = dd.getDay();
-			bz.ui.createCalendar(bz.ui.currentDay, bz.ui.currentDay, bz.ui.currentDay);
+			bz.ui.createCalendar(bz.ui.cal.currentYear, bz.ui.cal.currentMonth, bz.ui.cal.currentDay);
 		})();
 
 		return view;
