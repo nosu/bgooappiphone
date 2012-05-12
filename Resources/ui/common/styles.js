@@ -43,7 +43,8 @@
 			{font: {fontSize:12}, top:5, left:5},
 			{font: {fontSize:10}, top:9, left:34},
 			{font: {fontSize:16}, top:3, left:50},
-			{font: {fontSize:10}, top:9, left:60}
+			{font: {fontSize:10}, top:9, left:62},
+			45 //月数が二桁の場合のleft
 		],
 		
 		calendarView: {

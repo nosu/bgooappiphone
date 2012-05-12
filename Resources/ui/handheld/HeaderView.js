@@ -11,6 +11,7 @@
 			}));
 			view.add(bz.ui.yearMonthShowLabels[i]);
 		};
+		if (bz.ui.currentMonth >= 10) {bz.ui.yearMonthShowLabels[2].left = $$.yearMonthShowLabels[4]};
 		
 		//ユーザ名表示
 		bz.ui.nameLabel = Ti.UI.createLabel($$.Label);

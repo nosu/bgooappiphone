@@ -2,7 +2,7 @@
 	bz.ui.createCalendarView = function() {
 		var view = Titanium.UI.createView($$.calendarView);
 		
-		bz.ui.createCalendar = function(year, month, day) {
+		bz.ui.createCalendar = function(year, month) {
 			//月の日数を求める
 			var leapYear = false;
 			if ((year%4 == 0 && year%100 != 0) || (year%400 == 0)) leapYear=true;
@@ -90,11 +90,6 @@
 		    };
     
 		    //当月のView生成
-		    cols = prevMonthShowDay;
-		    
-		    //今日の日付をセット
-			bz.ui.currentCell = day + prevMonthShowDay;
-		    
 		    for(var i=0;i<thisMonthNumOfDay;i++) {
 		    	var top = 20 + $$.cellBorderWidth + 40 * rows;
 				var left = 0.4 + $$.cellBorderWidth + $$.cellWidth * cols;
@@ -108,7 +103,7 @@
 		        }));
 		        
 		        //アプリ起動日のセルに色をつける
-		        if(bz.ui.currentDay == i) {
+		        if(year == bz.ui.todayYear && month == bz.ui.todayMonth && bz.ui.todayDay == i) {
 		        	bz.ui.dayNumLabels[i+prevMonthShowDay].backgroundColor = "red";
 		        	bz.ui.currentCell = i + prevMonthShowDay;
 		        	bz.ui.currentCellColor = $$.dayLabelColor[cols];
@@ -118,8 +113,9 @@
 		        bz.ui.dayCellViews[i+prevMonthShowDay].addEventListener("click",
 		        (function(i, prevMonthShowDay) {return function(){
 		        	//currentCellの選択を解除
-		        	bz.ui.dayCellViews[bz.ui.currentCell].backgroundColor = bz.ui.currentCellColor;
-		        	//bz.ui.dayCellViews[bz.ui.currentCell].borderColor = "#fff";
+		        	if (bz.ui.currentCell) {
+		        		bz.ui.dayCellViews[bz.ui.currentCell].backgroundColor = bz.ui.currentCellColor;
+		        	};
 		        	
 		        	//新しいCellを選択
 		        	bz.ui.currentCellColor = bz.ui.dayCellViews[i+prevMonthShowDay].backgroundColor; //通常時の色を保存
@@ -175,21 +171,11 @@
 		            rows++;
 		        };
 		    };
-
-			//今日の日付に色をつける
-			var todayCell = day;
-			
 		
 		};  //createCalendar終わり
 
 		//今日の日付でカレンダー生成
-		(function(){
-			//dd = new Date();
-			//bz.ui.currentYear = dd.getFullYear();
-			//bz.ui.currentMonth = dd.getMonth() + 1;
-			//bz.ui.currentDay = dd.getDay();
-			bz.ui.createCalendar(bz.ui.currentYear, bz.ui.currentMonth, bz.ui.currentDay);
-		})();
+		bz.ui.createCalendar(bz.ui.currentYear, bz.ui.currentMonth);
 
 		return view;
 	};
