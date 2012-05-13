@@ -48,7 +48,7 @@
 		],
 		
 		calendarView: {
-			height:356, width:320,
+			height:260, width:320,
 			top:0, left:0
 		},
 		weekDayNameView: {
@@ -76,10 +76,30 @@
 		    top:-2, left:2
 		},
 		
-		//EventView用
-		eventView: {
-			height:80, width:320,
+		//EventListView用
+		eventListView: {
+			height:100, width:320,
 			top:0, left:0
+		},
+		eventListTableView: {
+			height: 100, width: 320,
+			top: 0, left: 0,
+			backgroundColor: "#fdf6e3",
+			style: Titanium.UI.iPhone.TableViewStyle.GROUPED
+		},
+		tableViewSection: {
+			height: 20
+		},
+		tableViewRow: {
+			height: 20
+		},
+		eventTime: {
+			font: {fontSize:10},
+			left: 10
+		},
+		eventTitle: {
+			font: {fontSize:10},
+			left: 80
 		}
 	};
 })();

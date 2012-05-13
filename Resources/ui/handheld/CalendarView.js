@@ -102,11 +102,10 @@
 		        	text:String(i+1)
 		        }));
 		        
+		        
 		        //アプリ起動日のセルに色をつける
-		        if(year == bz.ui.todayYear && month == bz.ui.todayMonth && bz.ui.todayDay == i) {
+		        if(bz.ui.currentYear == bz.ui.todayYear && bz.ui.currentMonth == bz.ui.todayMonth && bz.ui.todayDay == i + 1) {
 		        	bz.ui.dayNumLabels[i+prevMonthShowDay].backgroundColor = "red";
-		        	bz.ui.currentCell = i + prevMonthShowDay;
-		        	bz.ui.currentCellColor = $$.dayLabelColor[cols];
 		        };
 		        bz.ui.dayCellViews[i+prevMonthShowDay].add(bz.ui.dayNumLabels[i+prevMonthShowDay]);
 		        
@@ -124,7 +123,7 @@
 		        	//bz.ui.dayCellViews[i+prevMonthShowDay].borderColor = "black";
 		        	
 		        	//イベントViewを更新
-		        	//dammy
+		        	bz.ui.setEventList(bz.ui.currentYear, bz.ui.currentMonth, i+1);
 		        	}}).call(this, i, prevMonthShowDay)
     			);
     			
@@ -146,6 +145,8 @@
 		            rows++;
 		        };
 		    };
+		    
+		    
 
 		    //翌月Cell生成
 		    for(var i=0;i<nextMonthShowDay;i++) {
@@ -171,6 +172,7 @@
 		            rows++;
 		        };
 		    };
+		    
 		
 		};  //createCalendar終わり
 

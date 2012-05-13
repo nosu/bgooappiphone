@@ -1,16 +1,17 @@
 Ti.include("HeaderView.js");
 Ti.include("CalendarView.js");
+Ti.include("EventListView.js");
 
 (function(){
 	bz.ui.createSchedulerWindow = function(){
 		var win = Titanium.UI.createWindow($$.schedulerWindow);
-		var headerView = bz.ui.createHeaderView();
-		var calendarView = bz.ui.createCalendarView();
-		//var eventListView = bz.ui.createEventListView();
+		bz.ui.headerView = bz.ui.createHeaderView();
+		bz.ui.calendarView = bz.ui.createCalendarView();
+		bz.ui.eventListView = bz.ui.createEventListView();
 		
-		win.add(headerView);
-		win.add(calendarView);
-		//win.add(eventListView);
+		win.add(bz.ui.headerView);
+		win.add(bz.ui.calendarView);
+		win.add(bz.ui.eventListView);
 		return win;
 	};
 })();
