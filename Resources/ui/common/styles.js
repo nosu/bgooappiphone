@@ -28,7 +28,8 @@
 		
 		//SchedulerWindow用
 		cellWidth: 45.6,
-		cellBorderWidth:0.3,
+		cellHeight: 45,
+		cellBorderWidth:0.5,
 		
 		schedulerWindow: {
 			layout:"vertical",
@@ -36,7 +37,7 @@
 			width:320
 		},
 		headerView: {
-			height:20, width:320,
+			height:30, width:320,
 			top:0, left:0
 		},
 		yearMonthShowLabels: [
@@ -48,25 +49,25 @@
 		],
 		
 		calendarView: {
-			height:260, width:320,
+			height:288, width:320,
 			top:0, left:0
 		},
 		weekDayNameView: {
-			height:19, width:44.6,
+			height:17, width:44.6,
 			borderWidth:0.5, borderColor:"#eee8d5",
 			layout: "vertical"
 		},
 		weekDayNameLabel: {
 			width:44.6,
 			textAlign:'center', color:"#fff", font:{fontSize:12},
-			top:1.5, left:0
+			top:1, left: 0
 		},
 		weekDayName: ['日','月','火','水','木','金','土'],
 		weekDayNameLabelColor: ['#af1d66','#7a7a7a','#7a7a7a','#7a7a7a','#7a7a7a','#7a7a7a','#334499'],
 		dayLabelColor: ["#f8d3e6","#eee8d5","#eee8d5","#eee8d5","#eee8d5","#eee8d5","#d9ddf2", "#e6e6e6", "#586e75"], //日曜-土曜＋前月、翌月用
 		
 		dayCellView: {
-			height:39, width:44.6,
+			height:44, width:44.6,
 			borderWidth:0.5, borderColor:"#eee8d5",
 			layout: "vertical"
 		},
@@ -89,6 +90,9 @@
 		},
 		tableViewSection: {
 			height: 20
+		},
+		tableViewSectionHeaderView: {
+			font: {fontSize:12}
 		},
 		tableViewRow: {
 			height: 20

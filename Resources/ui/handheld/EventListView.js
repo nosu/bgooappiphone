@@ -14,8 +14,11 @@
 			time = [],
 			title = [];
 			
+		var tableViewSectionHeaderView = Ti.UI.createView(bz.combine($$.tableViewSectionHeaderView, {
+			text: year + "年" + month + "月" + day + "日",
+		}));	
 		var section = Ti.UI.createTableViewSection(bz.combine($$.tableViewSection, {
-			headerTitle: year + "年" + month + "月" + day + "日"
+			headerView: tableViewSectionHeaderView	
 		}));
 		
 		for (var i=0;i<3;i++) {

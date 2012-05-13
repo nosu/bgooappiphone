@@ -72,7 +72,7 @@
     
     		//前月のView生成
 		    for(var i=0;i<prevMonthShowDay;i++) {
-		    	var top = 20 + $$.cellBorderWidth;
+		    	var top = 18 + $$.cellBorderWidth;
 				var left = 0.4 + $$.cellBorderWidth + $$.cellWidth * cols;
 			    bz.ui.dayCellViews[i] = Ti.UI.createView(bz.combine($$.dayCellView,{
 		        	backgroundColor: $$.dayLabelColor[7],
@@ -91,7 +91,7 @@
     
 		    //当月のView生成
 		    for(var i=0;i<thisMonthNumOfDay;i++) {
-		    	var top = 20 + $$.cellBorderWidth + 40 * rows;
+		    	var top = 18 + $$.cellBorderWidth + $$.cellHeight * rows;
 				var left = 0.4 + $$.cellBorderWidth + $$.cellWidth * cols;
 		        bz.ui.dayCellViews[i+prevMonthShowDay] = Ti.UI.createView(bz.combine($$.dayCellView, {
 		            backgroundColor:$$.dayLabelColor[cols],
@@ -150,7 +150,7 @@
 
 		    //翌月Cell生成
 		    for(var i=0;i<nextMonthShowDay;i++) {
-		    	var top = 20 + $$.cellBorderWidth + 40 * rows;
+		    	var top = 18 + $$.cellBorderWidth + $$.cellHeight * rows;
 				var left = 0.4 + $$.cellBorderWidth + $$.cellWidth * cols;
 		        bz.ui.dayCellViews[i+prevMonthShowDay+thisMonthNumOfDay] = Ti.UI.createView(bz.combine($$.dayCellView, {
 		            backgroundColor: $$.dayLabelColor[7],

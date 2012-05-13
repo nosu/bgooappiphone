@@ -35,7 +35,6 @@ dependencies: \
   /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/TiStylesheet.h \
   /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/KrollBridge.h \
   /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/TiModule.h \
-  /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/XHRBridge.h \
   /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/TiRootViewController.h \
   /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/TiRootController.h \
   /Users/inoue/Dropbox/Repos/mac/bgooappiphone/build/iphone/Classes/TiWindowProxy.h \
